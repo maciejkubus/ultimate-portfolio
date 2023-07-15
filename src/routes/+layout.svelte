@@ -19,7 +19,11 @@
 		<Header />
 	</svelte:fragment>
 	<main class="py-12">
-		<slot />
+		<div class="h-full mx-auto flex flex-col justify-center items-center">
+			<div class="xl:space-y-5 w-full">
+				<slot />
+			</div>
+		</div>
 	</main>
 	<svelte:fragment slot="pageFooter">
 		<Footer />

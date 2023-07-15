@@ -1,8 +1,8 @@
 <script lang="ts">
 	import LogoInstagram from 'carbon-icons-svelte/lib/LogoInstagram.svelte';
 	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
-	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
 	import Email from 'carbon-icons-svelte/lib/Email.svelte';
+	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
 	import Close from 'carbon-icons-svelte/lib/Close.svelte';
 
 	import { goto } from '$app/navigation';
