@@ -16,8 +16,8 @@
 	<title>Ultimate Portfolio</title>
 </svelte:head>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
+<div class="h-full mx-auto flex flex-col justify-center items-center">
+	<div class="xl:space-y-5">
 		<Section>
 			<Banner>
 				<img slot="image" alt="banner" src="/assets/intro.svg" />
@@ -39,7 +39,7 @@
 			<div class="my-16">
 				<h2 class="text-5xl">Czym się zajmuję?</h2>
 			</div>
-			<div class="w-full flex gap-8">
+			<div class="w-full flex flex-col xl:flex-row gap-8">
 				<Card card="flex-1 text-primary-500 bg-secondary-600" footer="w-full flex justify-end">
 					<span slot="header">Programowaniem</span>
 					<span>
@@ -84,7 +84,7 @@
 			</div>
 		</Section>
 		<Section>
-			<div class="w-full flex gap-8 mt-36">
+			<div class="w-full flex flex-col xl:flex-row gap-8 mt-36">
 				<div class="flex-1 p-4">
 					<img src="/assets/kaktus.jpg" alt="kaktus" />
 				</div>
@@ -136,7 +136,7 @@
 			<div class="my-16">
 				<h2 class="text-5xl">Gdzie mnie znajdziesz?</h2>
 			</div>
-			<div class="flex gap-8">
+			<div class="flex gap-8 flex-col md:flex-row">
 				<div class="flex-1">
 					<SocialWidget>
 						<img slot="image" src="/assets/kaktus.jpg" alt="kaktus" />
