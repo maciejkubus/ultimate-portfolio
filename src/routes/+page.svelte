@@ -3,6 +3,9 @@
 	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import Banner from '$lib/components/banner/Banner.svelte';
 	import Section from '$lib/components/section/Section.svelte';
+	import Card from '$lib/components/card/Card.svelte';
+	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
+	import { goto } from '$app/navigation';
 </script>
 
 <svelte:head>
@@ -23,26 +26,58 @@
 						delikatną duszę.
 					</p>
 					<p class="mt-4">
-						Odwiedź również moje social media aby być na bieżąco z moimi poczynaniami.
+						Znajdziesz na tej stronie najważniejsze informacje o mnie i o moich projektach.
 					</p>
-					<div class="mt-4 flex gap-2">
-						<a
-							href="https://www.instagram.com/maciekkubus/"
-							target="_blank"
-							class="text-primary-500 hover:text-tertiary-500"
-						>
-							<LogoInstagram size={32} />
-						</a>
-						<a
-							href="https://github.com/maciejkubus/"
-							target="_blank"
-							class="text-primary-500 hover:text-tertiary-500"
-						>
-							<LogoGithub size={32} />
-						</a>
-					</div>
 				</div>
 			</Banner>
+		</Section>
+		<Section>
+			<div class="my-12">
+				<h2 class="text-5xl">Czym się zajmuję?</h2>
+			</div>
+			<div class="w-full flex gap-8">
+				<Card card="flex-1 text-primary-500 bg-secondary-600" footer="w-full flex justify-end">
+					<span slot="header">Programowaniem</span>
+					<span>
+						Programowaniem zajmuję się zawodowo. Zawsze było ono świetną formą spędzania czasu.
+					</span>
+					<a
+						slot="footer"
+						href="/aplikacje"
+						on:click|preventDefault={() => goto('aplikacje')}
+						class="text-primary-500 transition-transform hover:translate-x-2"
+					>
+						<ArrowRight size={32} />
+					</a>
+				</Card>
+				<Card card="flex-1 text-primary-500 bg-secondary-700" footer="w-full flex justify-end">
+					<span slot="header">Rysowaniem</span>
+					<span> Rysowaniem zajmuję się w wolnym czasie. Dla czystej przyjemności tworzenia. </span>
+					<a
+						slot="footer"
+						href="/rysunki"
+						on:click|preventDefault={() => goto('rysunki')}
+						class="text-primary-500 transition-transform hover:translate-x-2"
+					>
+						<ArrowRight size={32} />
+					</a>
+				</Card>
+				<Card card="flex-1 text-primary-500 bg-secondary-500" footer="w-full flex justify-end">
+					<span slot="header">Fotografowaniem</span>
+					<span>
+						Fotografią zazwyczaj zajmuję się gdy na przykład czekam na pociąg i nie mam ochoty
+						czekać.
+					</span>
+					<a
+						slot="footer"
+						href="/fotografie"
+						on:click|preventDefault={() => goto('fotografie')}
+						class="text-primary-500 transition-transform hover:translate-x-2"
+					>
+						<ArrowRight size={32} />
+					</a>
+				</Card>
+			</div>
 		</Section>
 	</div>
 </div>
