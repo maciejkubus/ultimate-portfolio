@@ -1,0 +1,19 @@
+<script lang="ts">
+	import { goto } from '$app/navigation';
+
+	export let href = '';
+</script>
+
+<a {href} on:click|preventDefault={() => goto(href)} class="text-primary-500 flex bg-secondary-500">
+	<div class="w-1/3 p-4 border-r-4 border-surface-500">
+		<slot name="image" />
+	</div>
+	<div class="w-2/3 p-4 flex justify-center items-center flex-col">
+		<h3 class="text-3xl">
+			<slot name="title" />
+		</h3>
+		<p class="text-xl mt-2 text-primary-600">
+			<slot name="subtitle" />
+		</p>
+	</div>
+</a>

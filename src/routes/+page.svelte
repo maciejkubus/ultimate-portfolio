@@ -9,6 +9,7 @@
 	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
 	import { goto } from '$app/navigation';
 	import NewsletterForm from '$lib/components/newsletter-form/NewsletterForm.svelte';
+	import SocialWidget from '$lib/components/social-widget/SocialWidget.svelte';
 </script>
 
 <svelte:head>
@@ -35,7 +36,7 @@
 			</Banner>
 		</Section>
 		<Section>
-			<div class="my-24">
+			<div class="my-16">
 				<h2 class="text-5xl">Czym się zajmuję?</h2>
 			</div>
 			<div class="w-full flex gap-8">
@@ -121,13 +122,34 @@
 			</div>
 		</Section>
 		<Section>
-			<div class="my-24 px-8 py-12 bg-secondary-500 flex flex-col xl:flex-row gap-1">
+			<div class="my-16 px-8 py-12 bg-secondary-500 flex flex-col xl:flex-row gap-1">
 				<div class="flex-1">
 					<h2 class="text-4xl">Zapisz się do newslettera.</h2>
 					<p class="mt-4 text-lg">Po co? bo go napisałem. Joł.</p>
 				</div>
 				<div class="flex-1">
 					<NewsletterForm />
+				</div>
+			</div>
+		</Section>
+		<Section>
+			<div class="my-16">
+				<h2 class="text-5xl">Gdzie mnie znajdziesz?</h2>
+			</div>
+			<div class="flex gap-8">
+				<div class="flex-1">
+					<SocialWidget>
+						<img slot="image" src="/assets/kaktus.jpg" alt="kaktus" />
+						<span slot="title">Instagram</span>
+						<span slot="subtitle">@maciekkubus</span>
+					</SocialWidget>
+				</div>
+				<div class="flex-1">
+					<SocialWidget>
+						<img slot="image" src="/assets/kaktus.jpg" alt="kaktus" />
+						<span slot="title">GitHub</span>
+						<span slot="subtitle">@maciejkubus</span>
+					</SocialWidget>
 				</div>
 			</div>
 		</Section>
