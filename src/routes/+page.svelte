@@ -8,6 +8,7 @@
 	import Card from '$lib/components/card/Card.svelte';
 	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
 	import { goto } from '$app/navigation';
+	import NewsletterForm from '$lib/components/newsletter-form/NewsletterForm.svelte';
 </script>
 
 <svelte:head>
@@ -116,6 +117,17 @@
 							od gleby.
 						</li>
 					</ul>
+				</div>
+			</div>
+		</Section>
+		<Section>
+			<div class="my-24 px-8 py-12 bg-secondary-500 flex flex-col xl:flex-row gap-1">
+				<div class="flex-1">
+					<h2 class="text-5xl">Zapisz się do newslettera.</h2>
+					<p class="mt-4 text-lg">Po co? bo go napisałem. Joł.</p>
+				</div>
+				<div class="flex-1">
+					<NewsletterForm />
 				</div>
 			</div>
 		</Section>
