@@ -1,0 +1,31 @@
+@tailwind base;@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	@apply h-full;
+	font-size: 18px;
+	@apply overflow-x-hidden;
+}
+
+.btn {
+	@apply font-bold;
+}
+
+a {
+	@apply text-tertiary-500;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+::selection {
+	@apply bg-secondary-500;
+	@apply text-primary-500;
+}
