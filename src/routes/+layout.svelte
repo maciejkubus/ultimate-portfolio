@@ -7,6 +7,7 @@
 
 	import { storePopup } from '@skeletonlabs/skeleton';
 	import Header from '$lib/components/header/Header.svelte';
+	import Footer from '$lib/components/footer/Footer.svelte';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
 
@@ -20,5 +21,7 @@
 	<main class="py-12">
 		<slot />
 	</main>
-	<svelte:fragment slot="pageFooter" />
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 </AppShell>
