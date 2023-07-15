@@ -14,7 +14,6 @@
 	}
 	const menuItems: MenuItem[] = [
 		{ title: 'Home', href: '/' },
-		{ title: 'O mnie', href: '/o-mnie' },
 		{ title: 'Aplikacje', href: '/aplikacje' },
 		{ title: 'Rysunki', href: '/rysunki' },
 		{ title: 'Fotografie', href: '/fotografie' },
