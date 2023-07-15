@@ -123,7 +123,7 @@
 		<Section>
 			<div class="my-24 px-8 py-12 bg-secondary-500 flex flex-col xl:flex-row gap-1">
 				<div class="flex-1">
-					<h2 class="text-5xl">Zapisz się do newslettera.</h2>
+					<h2 class="text-4xl">Zapisz się do newslettera.</h2>
 					<p class="mt-4 text-lg">Po co? bo go napisałem. Joł.</p>
 				</div>
 				<div class="flex-1">
