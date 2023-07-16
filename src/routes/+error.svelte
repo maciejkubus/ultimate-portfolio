@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Ultimate Portfolio - {$page.status} - {$page.error?.message}</title>
+	<title>Maciej Kubus - {$page.status} - {$page.error?.message}</title>
 </svelte:head>
 
 <div class="container h-full mx-auto flex justify-center items-center">

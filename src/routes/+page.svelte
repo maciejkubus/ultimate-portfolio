@@ -1,7 +1,5 @@
 <script lang="ts">
-	import LogoInstagram from 'carbon-icons-svelte/lib/LogoInstagram.svelte';
-	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
-	import Checkmark from 'carbon-icons-svelte/lib/Checkmark.svelte';
+	import StarFilled from 'carbon-icons-svelte/lib/Star.svelte';
 
 	import Banner from '$lib/components/banner/Banner.svelte';
 	import Section from '$lib/components/section/Section.svelte';
@@ -13,49 +11,47 @@
 </script>
 
 <svelte:head>
-	<title>Ultimate Portfolio</title>
+	<title>Maciej Kubus</title>
 </svelte:head>
 
 <Section>
 	<Banner>
 		<img slot="image" alt="banner" src="/assets/intro.svg" />
 		<span slot="title"> Maciej Kubus </span>
-		<span slot="subtitle"> Król życia </span>
+		<span slot="subtitle"> King of Life </span>
 		<div slot="content">
 			<p>
-				Poznaj mnie i moje królestwo. Udaj się w jego głąb aby poznać moje pasje i zainteresowania.
-				Zapoznaj się również z moimi realizacjami aby poznać również moją delikatną duszę.
+				Get to know me and my kingdom. Go and explore, discover everything about me and my passions.
+				Notice my soul in my projects and get a grasp of who I am really.
 			</p>
-			<p class="mt-4">
-				Znajdziesz na tej stronie najważniejsze informacje o mnie i o moich projektach.
-			</p>
+			<p class="mt-4">You will find here everything you have to know about me and my projects.</p>
 		</div>
 	</Banner>
 </Section>
 <Section>
 	<div class="my-16">
-		<h2 class="text-5xl">Czym się zajmuję?</h2>
+		<h2 class="text-5xl">What are my passions?</h2>
 	</div>
 	<div class="w-full flex flex-col xl:flex-row gap-8">
 		<Card card="flex-1 text-primary-500 bg-secondary-600" footer="w-full flex justify-end">
-			<span slot="header">Programowaniem</span>
-			<span>
-				Programowaniem zajmuję się zawodowo. Zawsze było ono świetną formą spędzania czasu.
-			</span>
+			<span slot="header">Applications</span>
+			<div class="xl:h-24">
+				App development has always been important to me and I actually do a lot of fun with it.
+			</div>
 			<a
 				slot="footer"
-				href="/aplikacje"
-				on:click|preventDefault={() => goto('aplikacje')}
+				href="/apps"
+				on:click|preventDefault={() => goto('apps')}
 				class="text-primary-500 transition-transform hover:translate-x-2"
 			>
 				<ArrowRight size={32} />
 			</a>
 		</Card>
 		<Card card="flex-1 text-primary-500 bg-secondary-700" footer="w-full flex justify-end">
-			<span slot="header">Rysowaniem</span>
-			<span>
-				Rysowaniem zajmuję się w wolnym czasie. Dla czystej zabawy ołówkiem na kartce papieru.
-			</span>
+			<span slot="header">Drawings</span>
+			<div class="xl:h-24">
+				I draw in my spare time. I love how drawing things allows you to see the details of reality.
+			</div>
 			<a
 				slot="footer"
 				href="/rysunki"
@@ -66,10 +62,11 @@
 			</a>
 		</Card>
 		<Card card="flex-1 text-primary-500 bg-secondary-500" footer="w-full flex justify-end">
-			<span slot="header">Fotografowaniem</span>
-			<span>
-				Fotografią zazwyczaj zajmuję się gdy na przykład czekam na pociąg i nie mam ochoty czekać.
-			</span>
+			<span slot="header">Photos</span>
+			<div class="xl:h-24">
+				I am an amateur photographer. I take pictures, for example, while waiting for a train so
+				that I don't waste any time waiting.
+			</div>
 			<a
 				slot="footer"
 				href="/fotografie"
@@ -87,33 +84,26 @@
 			<img src="/assets/kaktus.jpg" alt="kaktus" />
 		</div>
 		<div class="flex-1 p-4 flex flex-col justify-center">
-			<h3 class="text-5xl">Mój Kaktus</h3>
+			<h3 class="text-5xl">My personality</h3>
 			<p class="mt-12">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam libero maxime quas atque
-				nobis nostrum, optio quae magnam ratione officia maiores hic error cum deleniti veritatis
-				eos fugiat mollitia, perferendis voluptas. Neque nihil earum repudiandae distinctio,
-				adipisci quo blanditiis esse.
+				I'm an calm, introverted individual who thrives in calm environments. With a natural ability
+				to focus, I find joy in actively engaging with tasks rather than simply sitting idle.
+				Constantly seeking opportunities to do things, I embrace the satisfaction of meaningful
+				action.
 			</p>
-			<p class="mt-4">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iste blanditiis fuga
-				autem natus aut reprehenderit quasi suscipit quisquam. Earum.
-			</p>
+			<p class="mt-4">Here are a few things about me that i want to highlight:</p>
 			<ul class="mt-4">
-				<li class="align-middle">
-					<Checkmark size={24} class="inline mr-2 text-secondary-500" /> Podlewanie kaktusa jest mega
-					ważne.
+				<li class="align-middle mt-1">
+					<StarFilled size={24} class="inline mr-2 text-secondary-500" /> Introvert.
 				</li>
-				<li class="align-middle">
-					<Checkmark size={24} class="inline mr-2 text-secondary-500" /> Nasz zespół podleje ci kaktusa
-					teraz.
+				<li class="align-middle mt-1">
+					<StarFilled size={24} class="inline mr-2 text-secondary-500" /> I know how to focus.
 				</li>
-				<li class="align-middle">
-					<Checkmark size={24} class="inline mr-2 text-secondary-500" /> Kto nie ma kaktusa nie ma igieł
-					z kaktusa.
+				<li class="align-middle mt-1">
+					<StarFilled size={24} class="inline mr-2 text-secondary-500" /> Curious about the world.
 				</li>
-				<li class="align-middle">
-					<Checkmark size={24} class="inline mr-2 text-secondary-500" /> Wytrzymałość kaktusa zależy
-					od gleby.
+				<li class="align-middle mt-1">
+					<StarFilled size={24} class="inline mr-2 text-secondary-500" /> I like to overcome challenges.
 				</li>
 			</ul>
 		</div>
@@ -122,8 +112,8 @@
 <Section>
 	<div class="my-16 px-8 py-12 bg-secondary-500 flex flex-col xl:flex-row gap-1">
 		<div class="flex-1">
-			<h2 class="text-4xl">Zapisz się do newslettera.</h2>
-			<p class="mt-4 text-lg">Po co? bo go napisałem. Joł.</p>
+			<h2 class="text-4xl">Leave me your Email.</h2>
+			<p class="mt-4 text-lg">I will surely get back to you.</p>
 		</div>
 		<div class="flex-1">
 			<NewsletterForm />
@@ -132,7 +122,7 @@
 </Section>
 <Section>
 	<div class="my-16">
-		<h2 class="text-5xl">Gdzie mnie znajdziesz?</h2>
+		<h2 class="text-5xl">You can also find me on</h2>
 	</div>
 	<div class="flex gap-8 flex-col md:flex-row">
 		<div class="flex-1">

@@ -14,10 +14,10 @@
 	}
 	const menuItems: MenuItem[] = [
 		{ title: 'Home', href: '/' },
-		{ title: 'Aplikacje', href: '/aplikacje' },
-		{ title: 'Rysunki', href: '/rysunki' },
-		{ title: 'Fotografie', href: '/fotografie' },
-		{ title: 'Kontakt', href: '/kontakt' }
+		{ title: 'Applications', href: '/apps' },
+		{ title: 'Drawings', href: '/drawings' },
+		{ title: 'Photos', href: '/photos' },
+		{ title: 'Contact', href: '/contact' }
 	];
 
 	let path = '';
