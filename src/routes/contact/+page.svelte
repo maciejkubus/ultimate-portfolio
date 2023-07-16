@@ -55,10 +55,10 @@
 		I don't know why but I have need to put a map on contact page.
 	</p>
 	<iframe
-		src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d518.7437260221171!2d19.384784245438627!3d51.79565486145095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1689422950779!5m2!1sen!2spl"
+		src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151750.14080690907!2d-157.39696353262372!3d1.8705848441644446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1689528515761!5m2!1sen!2spl"
 		loading="lazy"
 		referrerpolicy="no-referrer-when-downgrade"
-		title="google maps"
+		title="Kiribati"
 		class="w-100 h-96 bg-primary-500"
 	/>
 </Section>
