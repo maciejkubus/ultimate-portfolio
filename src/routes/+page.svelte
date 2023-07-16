@@ -81,7 +81,7 @@
 <Section>
 	<div class="w-full flex flex-col xl:flex-row gap-8 mt-36">
 		<div class="flex-1 p-4">
-			<img src="/assets/kaktus.jpg" alt="kaktus" />
+			<img src="/assets/butterfly.jpg" alt="butterfly" />
 		</div>
 		<div class="flex-1 p-4 flex flex-col justify-center">
 			<h3 class="text-5xl">My personality</h3>
