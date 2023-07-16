@@ -292,7 +292,7 @@
 						<Code size={24} class="inline mr-2 text-surface-500" /> Laravel
 					</li>
 					<li class="align-middle mt-1">
-						<IbmCloudPakMantaAutomatedDataLineage size={24} class="inline mr-2 text-surface-500" /> Vue
+						<IbmCloudPakMantaAutomatedDataLineage size={24} class="inline mr-2 text-surface-500" /> VueJS
 					</li>
 					<li class="align-middle mt-1">
 						<DataBase size={24} class="inline mr-2 text-surface-500" /> MySQL
