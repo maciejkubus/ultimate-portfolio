@@ -54,8 +54,8 @@
 			</div>
 			<a
 				slot="footer"
-				href="/rysunki"
-				on:click|preventDefault={() => goto('rysunki')}
+				href="/drawings"
+				on:click|preventDefault={() => goto('drawings')}
 				class="text-primary-500 transition-transform hover:translate-x-2"
 			>
 				<ArrowRight size={32} />
@@ -69,8 +69,8 @@
 			</div>
 			<a
 				slot="footer"
-				href="/fotografie"
-				on:click|preventDefault={() => goto('fotografie')}
+				href="/photos"
+				on:click|preventDefault={() => goto('photos')}
 				class="text-primary-500 transition-transform hover:translate-x-2"
 			>
 				<ArrowRight size={32} />
