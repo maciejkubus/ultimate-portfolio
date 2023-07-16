@@ -127,14 +127,24 @@
 	<div class="flex gap-8 flex-col md:flex-row">
 		<div class="flex-1">
 			<SocialWidget href="https://www.instagram.com/maciekkubus/">
-				<img slot="image" src="/assets/kaktus.jpg" alt="kaktus" />
+				<img
+					slot="image"
+					src="/assets/instagram.jpg"
+					alt="kaktus"
+					class="h-28 border-8 border-surface-900"
+				/>
 				<span slot="title">Instagram</span>
 				<span slot="subtitle">@maciekkubus</span>
 			</SocialWidget>
 		</div>
 		<div class="flex-1">
 			<SocialWidget href="https://github.com/maciejkubus/">
-				<img slot="image" src="/assets/kaktus.jpg" alt="kaktus" />
+				<img
+					slot="image"
+					src="/assets/github.jpg"
+					alt="kaktus"
+					class="h-28 border-8 border-surface-900"
+				/>
 				<span slot="title">GitHub</span>
 				<span slot="subtitle">@maciejkubus</span>
 			</SocialWidget>
