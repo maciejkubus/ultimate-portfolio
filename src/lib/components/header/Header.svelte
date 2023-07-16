@@ -44,7 +44,9 @@
 		? 'flex'
 		: 'hidden'} xl:flex flex-col xl:flex-row justify-between items-center"
 >
-	<div>Logo</div>
+	<div>
+		<span class="font-bold text-4xl xl:text-lg">Maciej&nbsp;Kubus</span>
+	</div>
 	<nav>
 		<ul class="flex gap-6 flex-col xl:flex-row text-center">
 			{#each menuItems as menuItem}
