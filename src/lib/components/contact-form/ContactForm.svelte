@@ -21,25 +21,25 @@
 		<input
 			type="email"
 			bind:value={email}
-			placeholder="Wpisz swój email"
+			placeholder="Enter your E-mail"
 			class="w-full text-lg text-primary-500 bg-transparent border-0 border-b-2 border-primary-500 focus:outline-0 focus:border-primary-500 placeholder:text-primary-400"
 			disabled={sent}
 		/>
 		<textarea
 			bind:value={message}
-			placeholder="Wpisz swoją wiadomość"
+			placeholder="Enter your message"
 			class="w-full text-lg text-primary-500 bg-transparent border-0 border-b-2 border-primary-500 focus:outline-0 focus:border-primary-500 placeholder:text-primary-400 resize-y"
 			disabled={sent}
 		/>
 		<label>
 			<input type="checkbox" bind:checked class="mr-1 -mt-1" required disabled={sent} />
-			<span class="text-primary-600 text-md"
-				>Wyrażam zgodę na przetwarzanie danych oraz akceptuję postanowienia Polityki Prywatności.</span
-			>
+			<span class="text-primary-600 text-md">
+				I accept the <a href="/privacy-policy" class="text-tertiary-500"> privacy policy. </a>
+			</span>
 		</label>
 		<div class="w-full flex justify-end">
 			<button disabled={sent} class="px-8 py-2 text-lg bg-secondary-500">
-				{sent ? 'Wysłano' : 'Wyślij'}
+				{sent ? 'Sent' : 'Submit'}
 			</button>
 		</div>
 	</div>

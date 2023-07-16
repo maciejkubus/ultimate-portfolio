@@ -2,6 +2,10 @@
 	import Section from '$lib/components/section/Section.svelte';
 </script>
 
+<svelte:head>
+	<title>Maciej Kubus | Photos</title>
+</svelte:head>
+
 <Section>
 	<div class="my-16">
 		<h2 class="text-6xl">My Photos</h2>
