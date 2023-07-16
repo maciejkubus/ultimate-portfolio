@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Checkmark from 'carbon-icons-svelte/lib/Checkmark.svelte';
+	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
 	let email = '';
 	let sent = false;
 
@@ -28,6 +28,6 @@
 		on:click={send}
 		disabled={sent}
 	>
-		<Checkmark size={32} />
+		<ArrowRight size={32} />
 	</button>
 </div>
