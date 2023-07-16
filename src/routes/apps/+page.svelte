@@ -5,6 +5,9 @@
 	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import WaveHeight from 'carbon-icons-svelte/lib/WaveHeight.svelte';
 	import CicsSystemGroup from 'carbon-icons-svelte/lib/CicsSystemGroup.svelte';
+	import ObjectStorage from 'carbon-icons-svelte/lib/ObjectStorage.svelte';
+	import CopyLink from 'carbon-icons-svelte/lib/CopyLink.svelte';
+	import IbmCloudPakMantaAutomatedDataLineage from 'carbon-icons-svelte/lib/IbmCloudPakMantaAutomatedDataLineage.svelte';
 	import AppCard from '$lib/components/app-card/AppCard.svelte';
 	import Section from '$lib/components/section/Section.svelte';
 	import ImageLightbox from '$lib/components/image-lightbox/ImageLightbox.svelte';
@@ -86,6 +89,9 @@
 						<DataBase size={24} class="inline mr-2 text-surface-500" /> MySQL / SQLite
 					</li>
 					<li class="align-middle mt-1">
+						<ObjectStorage size={24} class="inline mr-2 text-surface-500" /> Typeorm
+					</li>
+					<li class="align-middle mt-1">
 						<Document size={24} class="inline mr-2 text-surface-500" /> Swagger
 					</li>
 				</ul>
@@ -160,7 +166,7 @@
 				<p class="font-bold">Highlighted elements:</p>
 				<ul class="mt-2">
 					<li class="align-middle">
-						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Colorful and fun design.
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Colorful and fun design
 					</li>
 					<li class="align-middle mt-1">
 						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Carousel
@@ -192,6 +198,112 @@
 			</div>
 			<div slot="links">
 				<a href="https://github.com/Macylion/mirai-karate-club">
+					<LogoGithub size={32} class="text-surface-500" />
+				</a>
+			</div>
+		</AppCard>
+		<AppCard>
+			<button slot="image" on:click={() => openLightBox('/assets/apps/gama.png')} class="h-full">
+				<img src="/assets/apps/gama.png" alt="karate" class="h-full object-cover" />
+			</button>
+			<span slot="name">Gama ogrody</span>
+			<span slot="description">
+				Full-stack web app created for a company that creates gardens.
+			</span>
+			<div slot="left">
+				<p class="font-bold">Highlighted elements/functionalities:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Front-end website
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Back-end api server
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Admin panel
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Partial content management
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Contact form
+					</li>
+				</ul>
+			</div>
+			<div slot="right">
+				<p class="font-bold">Main technologies:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Code size={24} class="inline mr-2 text-surface-500" /> Sveltekit
+					</li>
+					<li class="align-middle mt-1">
+						<IbmOpenEnterpriseLanguages size={24} class="inline mr-2 text-surface-500" /> Typescript
+					</li>
+					<li class="align-middle mt-1">
+						<ObjectStorage size={24} class="inline mr-2 text-surface-500" /> Prisma ORM
+					</li>
+					<li class="align-middle mt-1">
+						<DataBase size={24} class="inline mr-2 text-surface-500" /> MySQL
+					</li>
+				</ul>
+			</div>
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="https://ogrody.lodz.pl/">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/gama-ogrody/">
+					<LogoGithub size={32} class="text-surface-500" />
+				</a>
+			</div>
+		</AppCard>
+		<AppCard>
+			<button
+				slot="image"
+				on:click={() => openLightBox('/assets/apps/beehives.png')}
+				class="h-full"
+			>
+				<img src="/assets/apps/beehives.png" alt="karate" class="h-full object-cover" />
+			</button>
+			<span slot="name">Nowe sady 53</span>
+			<span slot="description">
+				Full-stack web app created for a company that sells apartments.
+			</span>
+			<div slot="left">
+				<p class="font-bold">Highlighted functionalities:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Front-end website
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Back-end api server
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Admin panel
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Apartments status management
+					</li>
+				</ul>
+			</div>
+			<div slot="right">
+				<p class="font-bold">Main technologies:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Code size={24} class="inline mr-2 text-surface-500" /> Laravel
+					</li>
+					<li class="align-middle mt-1">
+						<IbmCloudPakMantaAutomatedDataLineage size={24} class="inline mr-2 text-surface-500" /> Vue
+					</li>
+					<li class="align-middle mt-1">
+						<DataBase size={24} class="inline mr-2 text-surface-500" /> MySQL
+					</li>
+				</ul>
+			</div>
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="https://www.nowesady53.pl/">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/beehives">
 					<LogoGithub size={32} class="text-surface-500" />
 				</a>
 			</div>
