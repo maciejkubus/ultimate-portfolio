@@ -16,7 +16,7 @@
 <Modal />
 <Toast position="tr" />
 <Drawer />
-<AppShell class="transition-transform" regionPage="variant-ringed-surface">
+<AppShell class="transition-transform" regionPage="variant-ringed-surface ring-0">
 	<svelte:fragment slot="header">
 		<Header />
 	</svelte:fragment>

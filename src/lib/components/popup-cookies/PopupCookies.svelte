@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fly, scale } from 'svelte/transition';
+	import { backOut } from 'svelte/easing';
 
 	let cookiesAccepted = true;
+	let loaded = false;
 
 	onMount(() => {
+		loaded = true;
 		const accepted = window.localStorage.getItem('cookiesAccepted');
 		if (!accepted) {
 			cookiesAccepted = false;
@@ -16,9 +20,11 @@
 	}
 </script>
 
-{#if !cookiesAccepted}
+{#if loaded && !cookiesAccepted}
 	<div
-		class="fixed right-4 bottom-4 left-4 xl:left-auto xl:w-96 bg-primary-500 text-surface-500 p-8"
+		class="fixed z-50 right-4 bottom-4 left-4 xl:left-auto xl:w-96 bg-primary-500 text-surface-500 p-8"
+		in:scale={{ delay: 3000, easing: backOut }}
+		out:scale={{ easing: backOut }}
 	>
 		<h4 class="text-lg font-bold mb-2">Cookies</h4>
 		<p>

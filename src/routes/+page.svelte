@@ -1,6 +1,5 @@
 <script lang="ts">
 	import StarFilled from 'carbon-icons-svelte/lib/StarFilled.svelte';
-
 	import Banner from '$lib/components/banner/Banner.svelte';
 	import Section from '$lib/components/section/Section.svelte';
 	import Card from '$lib/components/card/Card.svelte';

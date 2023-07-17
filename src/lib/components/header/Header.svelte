@@ -4,9 +4,17 @@
 	import Email from 'carbon-icons-svelte/lib/Email.svelte';
 	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
 	import Close from 'carbon-icons-svelte/lib/Close.svelte';
-
+	import { fly, scale } from 'svelte/transition';
+	import { backOut } from 'svelte/easing';
+	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+
+	let loaded = false;
+
+	onMount(() => {
+		loaded = true;
+	});
 
 	interface MenuItem {
 		title: string;
@@ -39,53 +47,61 @@
 	{/if}
 </button>
 
-<header
-	class="w-100 fixed z-20 bg-surface-900 inset-0 xl:inset-auto xl:sticky p-8 pt-16 xl:pt-8 xl:border-b-2 border-secondary-500 {open
-		? 'flex'
-		: 'hidden'} xl:flex flex-col xl:flex-row justify-between items-center"
->
-	<div>
-		<span class="font-bold text-4xl xl:text-lg">Maciej&nbsp;Kubus</span>
-	</div>
-	<nav>
-		<ul class="flex gap-6 flex-col xl:flex-row text-center">
-			{#each menuItems as menuItem}
-				<li class="text-lg font-semibold">
-					<a
-						href={menuItem.href}
-						on:click|preventDefault={() => {
-							goto(menuItem.href);
-							open = false;
-						}}
-						class={path === menuItem.href ? 'text-tertiary-500 font-bold' : 'text-primary-600'}
-					>
-						{menuItem.title}
-					</a>
-				</li>
-			{/each}
-		</ul>
-	</nav>
-	<div class="flex gap-6">
-		<a
-			href="https://www.instagram.com/maciekkubus/"
-			target="_blank"
-			class="text-primary-500 hover:text-tertiary-500"
-		>
-			<LogoInstagram size={32} />
-		</a>
-		<a
-			href="https://github.com/maciejkubus/"
-			target="_blank"
-			class="text-primary-500 hover:text-tertiary-500"
-		>
-			<LogoGithub size={32} />
-		</a>
-		<a
-			href="mailto:maciekkubus@gmail.com"
-			target="_blank"
-			class="text-primary-500 hover:text-tertiary-500"
-		>
-			<Email size={32} />
-		</a>
-	</div>
-</header>
+{#if loaded}
+	<header
+		class="w-100 fixed z-20 bg-surface-900 inset-0 xl:inset-auto xl:sticky p-8 pt-16 xl:pt-8 xl:border-b-2 border-secondary-500 {open
+			? 'flex'
+			: 'hidden'} xl:flex flex-col xl:flex-row justify-between items-center"
+		transition:fly={{
+			delay: 1400,
+			y: -300,
+			opacity: 0,
+			easing: backOut
+		}}
+	>
+		<div>
+			<span class="font-bold text-4xl xl:text-lg">Maciej&nbsp;Kubus</span>
+		</div>
+		<nav>
+			<ul class="flex gap-6 flex-col xl:flex-row text-center">
+				{#each menuItems as menuItem}
+					<li class="text-lg font-semibold">
+						<a
+							href={menuItem.href}
+							on:click|preventDefault={() => {
+								goto(menuItem.href);
+								open = false;
+							}}
+							class={path === menuItem.href ? 'text-tertiary-500 font-bold' : 'text-primary-600'}
+						>
+							{menuItem.title}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+		<div class="flex gap-6">
+			<a
+				href="https://www.instagram.com/maciekkubus/"
+				target="_blank"
+				class="text-primary-500 hover:text-tertiary-500"
+			>
+				<LogoInstagram size={32} />
+			</a>
+			<a
+				href="https://github.com/maciejkubus/"
+				target="_blank"
+				class="text-primary-500 hover:text-tertiary-500"
+			>
+				<LogoGithub size={32} />
+			</a>
+			<a
+				href="mailto:maciekkubus@gmail.com"
+				target="_blank"
+				class="text-primary-500 hover:text-tertiary-500"
+			>
+				<Email size={32} />
+			</a>
+		</div>
+	</header>
+{/if}
