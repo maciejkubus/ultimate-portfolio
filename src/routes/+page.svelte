@@ -86,8 +86,8 @@
 		<div class="flex-1 p-4 flex flex-col justify-center">
 			<h3 class="text-5xl">My personality</h3>
 			<p class="mt-12">
-				I'm an calm, introverted individual who thrives in calm environments. With a natural ability
-				to focus, I find joy in actively engaging with tasks rather than simply sitting idle.
+				I'm an introverted individual who thrives in calm environments. With a natural ability to
+				focus, I find joy in actively engaging with tasks rather than simply sitting idle.
 				Constantly seeking opportunities to do things, I embrace the satisfaction of meaningful
 				action.
 			</p>
