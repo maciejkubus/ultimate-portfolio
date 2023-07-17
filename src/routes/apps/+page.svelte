@@ -96,8 +96,11 @@
 					</li>
 				</ul>
 			</div>
-			<div slot="links">
-				<a href="https://github.com/maciejkubus/ultimate-cloud-storage">
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="http://api-storage.maciejkubus.usermd.net/api" target="_blank">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/ultimate-cloud-storage" target="_blank">
 					<LogoGithub size={32} class="text-surface-500" />
 				</a>
 			</div>
@@ -148,8 +151,11 @@
 					</li>
 				</ul>
 			</div>
-			<div slot="links">
-				<a href="https://github.com/maciejkubus/ultimate-cloud-storage">
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="http://storage.maciejkubus.usermd.net/" target="_blank">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/ultimate-cloud-storage-web" target="_blank">
 					<LogoGithub size={32} class="text-surface-500" />
 				</a>
 			</div>
@@ -196,8 +202,11 @@
 					</li>
 				</ul>
 			</div>
-			<div slot="links">
-				<a href="https://github.com/Macylion/mirai-karate-club">
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="http://karate.maciejkubus.usermd.net/" target="_blank">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/Macylion/mirai-karate-club" target="_blank">
 					<LogoGithub size={32} class="text-surface-500" />
 				</a>
 			</div>
@@ -248,10 +257,10 @@
 				</ul>
 			</div>
 			<div slot="links" class="flex gap-1 xl:gap-4">
-				<a href="https://ogrody.lodz.pl/">
+				<a href="https://ogrody.lodz.pl/" target="_blank">
 					<CopyLink size={32} class="text-surface-500" />
 				</a>
-				<a href="https://github.com/maciejkubus/gama-ogrody/">
+				<a href="https://github.com/maciejkubus/gama-ogrody/" target="_blank">
 					<LogoGithub size={32} class="text-surface-500" />
 				</a>
 			</div>
@@ -300,10 +309,10 @@
 				</ul>
 			</div>
 			<div slot="links" class="flex gap-1 xl:gap-4">
-				<a href="https://www.nowesady53.pl/">
+				<a href="https://www.nowesady53.pl/" target="_blank">
 					<CopyLink size={32} class="text-surface-500" />
 				</a>
-				<a href="https://github.com/maciejkubus/beehives">
+				<a href="https://github.com/maciejkubus/beehives" target="_blank">
 					<LogoGithub size={32} class="text-surface-500" />
 				</a>
 			</div>
