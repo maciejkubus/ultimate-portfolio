@@ -8,9 +8,11 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/footer/Footer.svelte';
+	import PopupCookies from '$lib/components/popup-cookies/PopupCookies.svelte';
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
 
+<PopupCookies />
 <Modal />
 <Toast position="tr" />
 <Drawer />
