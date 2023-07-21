@@ -1,6 +1,6 @@
 <script>
 	import { fly, scale } from 'svelte/transition';
-	import { backOut } from 'svelte/easing';
+	import { backIn, backOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
 	import Blob from '../blob/Blob.svelte';
 
@@ -11,15 +11,20 @@
 	});
 </script>
 
-<div class="w-100 flex flex-col xl:flex-row gap-12 justify-stretch xl:min-h-[700px]">
+<div class="w-100 flex flex-col xl:flex-row gap-12 justify-stretch xl:min-h-[900px]">
 	<div class="flex-1 flex justify-center flex-col">
 		{#if loaded}
 			<div
-				transition:fly={{
+				in:fly={{
 					delay: 250,
 					y: 40,
 					opacity: 0,
 					easing: backOut
+				}}
+				out:fly={{
+					y: 40,
+					opacity: 0,
+					easing: backIn
 				}}
 			>
 				<h1 class="text-6xl font-bold font-heading-token">
@@ -36,7 +41,10 @@
 	</div>
 	<div class="flex-1 relative hidden xl:block">
 		{#if loaded}
-			<div transition:scale={{ delay: 800, easing: backOut, duration: 700 }}>
+			<div
+				in:scale={{ delay: 800, easing: backOut, duration: 700 }}
+				out:scale={{ delay: 50, easing: backIn, duration: 700 }}
+			>
 				<div class="absolute z-10 inset-0 opacity-50">
 					<Blob />
 				</div>
