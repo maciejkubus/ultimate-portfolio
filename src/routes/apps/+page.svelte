@@ -160,6 +160,160 @@
 				</a>
 			</div>
 		</AppCard>
+
+		<AppCard>
+			<button
+				slot="image"
+				on:click={() => openLightBox('/assets/apps/viralcode.png')}
+				class="h-full"
+			>
+				<img src="/assets/apps/viralcode.png" alt="viralcode" class="h-full object-cover" />
+			</button>
+			<span slot="name">Viral Code - Remake</span>
+			<span slot="description"> Remake of my company website. </span>
+			<div slot="left">
+				<p class="font-bold">Highlighted functionalities:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Cool Animations
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Clean design
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Playful colors
+					</li>
+				</ul>
+			</div>
+			<div slot="right">
+				<p class="font-bold">Main technologies:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Code size={24} class="inline mr-2 text-surface-500" /> Sveltekit
+					</li>
+					<li class="align-middle mt-1">
+						<CicsSystemGroup size={24} class="inline mr-2 text-surface-500" /> Sveltekit Skeleton
+					</li>
+					<li class="align-middle mt-1">
+						<IbmOpenEnterpriseLanguages size={24} class="inline mr-2 text-surface-500" /> Typescript
+					</li>
+					<li class="align-middle mt-1">
+						<WaveHeight size={24} class="inline mr-2 text-surface-500" /> Tailwind.
+					</li>
+				</ul>
+			</div>
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="https://viralcode.maciejkubus.usermd.net/" target="_blank">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/Viral-Code" target="_blank">
+					<LogoGithub size={32} class="text-surface-500" />
+				</a>
+			</div>
+		</AppCard>
+
+		<AppCard>
+			<button slot="image" on:click={() => openLightBox('/assets/apps/shop.png')} class="h-full">
+				<img src="/assets/apps/shop.png" alt="shop" class="h-full object-cover" />
+			</button>
+			<span slot="name">Design - Shop</span>
+			<span slot="description">
+				Just design of the ordinary internet store. (project without back-end)
+			</span>
+			<div slot="left">
+				<p class="font-bold">Highlighted functionalities:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Cool products
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Account settings
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Special deals
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Product filters
+					</li>
+				</ul>
+			</div>
+			<div slot="right">
+				<p class="font-bold">Main technologies:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Code size={24} class="inline mr-2 text-surface-500" /> Sveltekit
+					</li>
+					<li class="align-middle mt-1">
+						<CicsSystemGroup size={24} class="inline mr-2 text-surface-500" /> Sveltekit Skeleton
+					</li>
+					<li class="align-middle mt-1">
+						<IbmOpenEnterpriseLanguages size={24} class="inline mr-2 text-surface-500" /> Typescript
+					</li>
+					<li class="align-middle mt-1">
+						<WaveHeight size={24} class="inline mr-2 text-surface-500" /> Tailwind.
+					</li>
+				</ul>
+			</div>
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="https://shop.maciejkubus.usermd.net/" target="_blank">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/shop" target="_blank">
+					<LogoGithub size={32} class="text-surface-500" />
+				</a>
+			</div>
+		</AppCard>
+
+		<AppCard>
+			<button slot="image" on:click={() => openLightBox('/assets/apps/blog.png')} class="h-full">
+				<img src="/assets/apps/blog.png" alt="blog" class="h-full object-cover" />
+			</button>
+			<span slot="name">Design - Blog</span>
+			<span slot="description"> Just design of the ordinary blog website. </span>
+			<div slot="left">
+				<p class="font-bold">Highlighted functionalities:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Blog posts
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Contact form
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Cool sidebar
+					</li>
+					<li class="align-middle mt-1">
+						<Checkmark size={24} class="inline mr-2 text-surface-500" /> Fake Ad in sidebar
+					</li>
+				</ul>
+			</div>
+			<div slot="right">
+				<p class="font-bold">Main technologies:</p>
+				<ul class="mt-2">
+					<li class="align-middle">
+						<Code size={24} class="inline mr-2 text-surface-500" /> Sveltekit
+					</li>
+					<li class="align-middle mt-1">
+						<CicsSystemGroup size={24} class="inline mr-2 text-surface-500" /> Sveltekit Skeleton
+					</li>
+					<li class="align-middle mt-1">
+						<IbmOpenEnterpriseLanguages size={24} class="inline mr-2 text-surface-500" /> Typescript
+					</li>
+					<li class="align-middle mt-1">
+						<WaveHeight size={24} class="inline mr-2 text-surface-500" /> Tailwind.
+					</li>
+				</ul>
+			</div>
+			<div slot="links" class="flex gap-1 xl:gap-4">
+				<a href="https://blog.maciejkubus.usermd.net/" target="_blank">
+					<CopyLink size={32} class="text-surface-500" />
+				</a>
+				<a href="https://github.com/maciejkubus/website" target="_blank">
+					<LogoGithub size={32} class="text-surface-500" />
+				</a>
+			</div>
+		</AppCard>
+
 		<AppCard>
 			<button slot="image" on:click={() => openLightBox('/assets/apps/karate.png')} class="h-full">
 				<img src="/assets/apps/karate.png" alt="karate" class="h-full object-cover" />
