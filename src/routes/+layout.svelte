@@ -17,10 +17,10 @@
 <Toast position="tr" />
 <Drawer />
 <AppShell class="transition-transform" regionPage="variant-ringed-surface ring-0">
-	<svelte:fragment slot="header">
+	<!-- <svelte:fragment slot="header">
 		<Header />
-	</svelte:fragment>
-	<main class="py-12">
+	</svelte:fragment> -->
+	<main class="py-12 pt-20">
 		<div class="h-full mx-auto flex flex-col justify-center items-center">
 			<div class="xl:space-y-5 w-full">
 				<slot />

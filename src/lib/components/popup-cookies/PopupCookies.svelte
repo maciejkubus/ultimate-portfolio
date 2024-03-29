@@ -26,17 +26,17 @@
 		in:scale={{ delay: 3000, easing: backOut }}
 		out:scale={{ easing: backOut }}
 	>
-		<h4 class="text-lg font-bold mb-2">Cookies</h4>
+		<h4 class="text-lg font-bold mb-2">Ciasteczka</h4>
 		<p>
-			This site is using cookies to enhance your browsing experience. By continuing to use this
-			website, you consent to the use of cookies.
+			Ta strona korzysta z plików cookie, aby poprawić komfort przeglądania. Kontynuując korzystanie
+			z tego stronie, wyrażasz zgodę na używanie plików cookies.
 		</p>
 		<div class="w-full flex justify-end">
 			<button
 				class="bg-surface-500 text-primary-500 hover:bg-tertiary-500 px-8 py-2"
 				on:click={acceptCookies}
 			>
-				Accept
+				Akceptuje
 			</button>
 		</div>
 	</div>

@@ -5,7 +5,7 @@
 	export let footer = '';
 </script>
 
-<div class="p-4 {card}">
+<div class="p-4 shadow-xl rounded-lg {card}">
 	{#if $$slots.header}
 		<header class="p-4 font-semibold text-xl {header}">
 			<slot name="header" />

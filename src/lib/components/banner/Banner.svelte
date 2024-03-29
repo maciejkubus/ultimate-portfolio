@@ -11,7 +11,7 @@
 	});
 </script>
 
-<div class="w-100 flex flex-col xl:flex-row gap-12 justify-stretch xl:min-h-[600px]">
+<div class="w-100 my-16 flex flex-col xl:flex-row gap-12 justify-stretch xl:min-h-[600px]">
 	<div class="flex-1 flex justify-center flex-col">
 		{#if loaded}
 			<div
@@ -25,7 +25,7 @@
 				<h1 class="text-6xl font-bold font-heading-token">
 					<slot name="title" />
 				</h1>
-				<p class="text-2xl text-primary-700 font-semibold">
+				<p class="text-2xl text-primary-700 font-semibold pt-2">
 					<slot name="subtitle" />
 				</p>
 				<div class="mt-8 text-lg leading-6">
